@@ -1,2 +1,2 @@
-# pubgnews.com
-PUBG News site
+# PUBGNEWS.COM - Новостной сайт PUBG.
+*Новостной сайт по **PLAYERUNKNOWN'S BATTLEGROUNDS.***
