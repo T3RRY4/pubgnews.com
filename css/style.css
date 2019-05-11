@@ -4,6 +4,16 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3.headline {
+  text-transform: none;
+}
+
 header {
   padding: 15px 330px;
   background-color: #ff8400;
@@ -39,5 +49,52 @@ main {
   background-image: url("../img/background.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 60px auto;
+  width: 1263px;
+  height: 2000px;
+  background: #fff;
+}
+
+main .container .col-left {
+  width: 224px;
+  background-color: #2b354b;
+  color: #fff;
+}
+
+main .container .col-left .content {
+  margin: 30px;
+}
+
+main .container .col-center {
+  width: 709px;
+  color: #000;
+}
+
+main .container .col-center .hot-news__img {
+  width: 709px;
+}
+
+main .container .col-center .hot-news__headline {
+  position: absolute;
+  top: 443px;
+  left: 597px;
+}
+
+main .container .col-right {
+  width: 330px;
+  background-color: #d6d6d6;
+  color: #2b354b;
+}
+
+main .container .col-right .content {
+  margin: 30px;
 }
 /*# sourceMappingURL=style.css.map */

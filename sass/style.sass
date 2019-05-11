@@ -4,6 +4,13 @@
     padding: 0
     font-family: 'Roboto Condensed', sans-serif;
 
+h3
+    font-size: 18px
+    font-weight: 700
+    text-transform: uppercase
+    &.headline
+        text-transform: none
+
 header
     padding: 15px 330px
     background-color: #ff8400
@@ -27,3 +34,33 @@ main
     background-image: url('../img/background.png')
     background-size: cover
     background-repeat: no-repeat
+    background-attachment: fixed
+    overflow: hidden
+    & .container
+        display: flex
+        margin: 60px auto
+        width: 1263px
+        height: 2000px
+        background: #fff
+        & .col-left
+            width: 224px
+            background-color: #2b354b
+            color: #fff
+            & .content
+                margin: 30px
+        & .col-center
+            width: 709px
+            color: #000
+            & .hot-news
+                &__img
+                    width: 709px
+                &__headline
+                    position: absolute
+                    top: 443px
+                    left: 597px
+        & .col-right
+            width: 330px
+            background-color: #d6d6d6
+            color: #2b354b
+            & .content
+                margin: 30px
