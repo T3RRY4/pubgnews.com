@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PUBGNEWS.COM - Новости PUBG</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <progress value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+    <div id="top"><i class="fas fa-angle-up"></i></div>
+    <header>
+        <div class="header__logo"><a href="#"><img src="./img/logo.svg" alt="Логотип"></a></div>
+        <div class="header__nav">
+            <nav>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Гайды</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="col-left">
+                <div class="content">
+                    <h3>Последние новости</h1>
+                </div>
+            </div>
+            <div class="col-center">
+                <div class="content">
+                    <div class="hot-news">
+                        <a href="#"><img src="./img/news/2nd-phase-pel-13-may.png" alt="Изображение" class="hot-news__img"></a>
+                            <div class="hot-news__headline">
+                            <div class="headline_tags">
+                                Турниры • 1 час назад
+                                <span class="icon"><i class="fas fa-fire"></i></span>
+                            </div>
+                            <div class="name">
+                                <a href="#"><h3 class="headline">Вторая фаза PEL Contenders стартует 13 мая</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="news__block">
+                            <img src="./img/news/mp5-k.png" alt="MP5K - наиболее популярный пистолет-пулемет на Викенди">
+                            <div class="title">
+                                MP5K - наиболее популярный пистолет-пулемет на Викенди
+                            </div>
+                            <div class="tags">
+                                Статистика • 1 час назад
+                            </div>
+                        </div>
+                        <div class="news__block">
+                                <img src="./img/news/mp5-k.png" alt="MP5K - наиболее популярный пистолет-пулемет на Викенди">
+                                <div class="title">
+                                    MP5K - наиболее популярный пистолет-пулемет на Викенди
+                                </div>
+                                <div class="tags">
+                                    Статистика • 1 час назад
+                                </div>
+                        </div>
+                        <div class="news__block">
+                                <img src="./img/news/mp5-k.png" alt="MP5K - наиболее популярный пистолет-пулемет на Викенди">
+                                <div class="title">
+                                    MP5K - наиболее популярный пистолет-пулемет на Викенди
+                                </div>
+                                <div class="tags">
+                                    Статистика • 1 час назад
+                                </div>
+                            </div>
+                            <div class="news__block">
+                                    <img src="./img/news/mp5-k.png" alt="MP5K - наиболее популярный пистолет-пулемет на Викенди">
+                                    <div class="title">
+                                        MP5K - наиболее популярный пистолет-пулемет на Викенди
+                                    </div>
+                                    <div class="tags">
+                                        Статистика • 1 час назад
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="content">
+                    <h3>Гайды</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+            $(function() {
+                $(window).on("scroll resize", function() {
+                    var o = $(window).scrollTop() / ($(document).height() - $(window).height());
+                    $(".progress-bar").css({
+                        "width": (100 * o | 0) + "%"
+                    });
+                    $('progress')[0].value = o;
+                })
+            });
+    </script>
+    <script type="text/javascript">
+        var top_show = 150; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+        var delay = 1000; // Задержка прокрутки
+        $(document).ready(function() {
+          $(window).scroll(function () { // При прокрутке попадаем в эту функцию
+            /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+            if ($(this).scrollTop() > top_show) $('#top').fadeIn();
+            else $('#top').fadeOut();
+          });
+          $('#top').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+            /* Плавная прокрутка наверх */
+            $('body, html').animate({
+              scrollTop: 0
+            }, delay);
+          });
+        });
+      </script>
+</body>
+</html>

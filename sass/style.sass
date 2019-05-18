@@ -11,6 +11,10 @@ h3
     &.headline
         text-transform: none
 
+a
+    color: #ffffff
+    text-decoration: none
+
 header
     padding: 15px 330px
     background-color: #ff8400
@@ -58,9 +62,88 @@ main
                     position: absolute
                     top: 443px
                     left: 597px
+                    width: 473px
+                    padding: 26px 22px
+                    background-color: #2b354b
+                    color: #fff
+                    box-shadow: 5px 5px 15px rgba(0,0,0,.2)
+                    .headline_tags
+                        margin-bottom: 5px
+                        color: #aab1c1
+                        .icon
+                            color: #ff6c00
+                            margin-left: 5px
+            & .news
+                display: flex
+                flex-wrap: wrap
+                width: 800px
+                margin: 100px 45px
+                &__block
+                    width: 219px
+                    margin-right: 50px
+                    margin-bottom: 50px
+                    .title
+                        margin-top: 14px
+                        font-style: 16px
+                        font-weight: 700
+                    .tags
+                        margin-top: 8px
+                        font-style: 12px
+                        color: #868686
         & .col-right
             width: 330px
             background-color: #d6d6d6
             color: #2b354b
             & .content
                 margin: 30px
+progress
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 5px
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    border: none
+    background: transparent
+    color: #002c68
+    &::-webkit-progress-bar
+        background: transparent
+        border-radius: 5px
+    &::-webkit-progress-value
+        background: #ff8400
+        border-radius: 5px
+    &::-moz-progress-bar
+        background: #ff8400
+        border-radius: 5px
+.progress-container
+    width: 100%
+    background: transparent
+    position: fixed
+    top: 0
+    left: 0
+    height: 5px
+    display: block
+.progress-bar
+    background: #ff8400
+    width: 0%
+    display: block
+    height: inherit
+
+#top
+  right: 1.5em
+  bottom: 1em
+  cursor: pointer
+  display: none
+  font-size: 200%
+  position: fixed
+  background-color: #ff8400
+  color: #fff
+  height: 70px
+  width: 70px
+  border-radius: 50px
+  box-shadow: 5px 5px 15px rgba(0,0,0,.4)
+  & i
+      margin-top: 18px
+      margin-left: 24px
